@@ -35,7 +35,8 @@ const Home = () =>{
                     {
                        poularMovies.map((movie, i)=>{
                         return(
-                        <Link style={{color: "White"}} to={`movies/${movie.id}`}>    
+                        <Link to={`/movie/${movie.id}`} style={{ color:"white"}}>    
+                        {/* <Link style={{color: "White"}} to={`movie/${movie.id}`}>     */}
                         <div>
                             <div className="posterImage">
                                 <img src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`}/>
