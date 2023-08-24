@@ -5,11 +5,18 @@
   padding: 0;
 }
 
-:root{
+.dark-theme{
   --headerbg: #2a0231;
   --headerText: #ececec; 
   --bg: #25003E;
-  --Text: #ececec;
+  --Text: hsl(0, 0%, 93%);
+}
+
+.light-theme{
+  --headerbg: #004176;
+  --headerText: #ececec; 
+  --bg: #fefefe;
+  --Text: #818080;
 }
 
 

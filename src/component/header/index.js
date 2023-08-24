@@ -1,6 +1,7 @@
 import React from "react";
 import './style.css'
 import { NavLink, Link } from "react-router-dom";
+import Mode from "../mode";
 
 const Header = () =>{
     return(
@@ -9,6 +10,7 @@ const Header = () =>{
             <Link to="/">Cinema</Link>
             </div>
             <div className="header-btns">
+                <Mode/>
                 <NavLink to="/">Home</NavLink>
                 <NavLink to="/movies/popular">Popular</NavLink>
                 <NavLink to="/movies/top_rated">Top Rated</NavLink>
