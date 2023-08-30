@@ -90,6 +90,7 @@ const MovieDetails = () =>{
                     ))
                 }
             </div>
+            
         </div>
     )
 }

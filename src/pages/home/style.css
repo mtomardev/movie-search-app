@@ -44,3 +44,70 @@
     margin-bottom: 0.25rem;
 }
 
+@media only screen and (max-width: 1000px) {
+    .posterImage__title{
+        font-size: 2rem;        
+        }
+
+        .posterImage__runtime {
+            font-size: 1rem;
+        
+        }
+
+        .posterImage__description{
+            width: 50%;
+            text-align: left;
+            font-style: italic;
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+
+        .posterImage{
+            height: 400px;
+        }
+  }
+
+  @media only screen and (max-width: 780px) {
+    .posterImage__title{
+        font-size: 2rem;        
+        }
+
+        .posterImage__runtime {
+            font-size: 1rem;
+        
+        }
+
+        .posterImage__description{
+            display: none;
+        }
+
+
+        .posterImage{
+            height: 300px;
+        }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .posterImage__title{
+        font-size: 1rem;        
+        }
+
+        .posterImage__runtime {
+            font-size: 1rem;
+        
+        }
+
+        .posterImage__rating {
+            margin-left: 1rem;
+        }
+
+        .posterImage__description{
+            display: none;
+        }
+
+
+        .posterImage{
+            height: 220px;
+        }
+  }

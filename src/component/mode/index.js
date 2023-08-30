@@ -23,7 +23,6 @@ const Mode = () =>{
 
     return(
         <div>
-            
             <span style={{color:"var(--headerText)"}}>{modeText} <Switch defaultChecked onClick={()=> toggleTheme()} /></span> 
         </div>
     )

@@ -5,6 +5,7 @@ import Home from './pages/home';
 import MovieList from './component/movieList';
 import MovieDetails from './pages/movieDetails';
 
+
 function App() {
   return (
     <div >

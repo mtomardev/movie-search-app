@@ -5,10 +5,19 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // css for carou
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
 import MovieList from "../../component/movieList";
+import SearchInput from "../../component/search";
+import Footer from "../../component/footer";
+
 
 
 const Home = () =>{
     const [poularMovies, setPoularMovies] = useState([]);
+    const [searchData, setSearchData] = useState("");
+
+    const searchHandle = (e) =>{
+        console.log(e.target.value)
+        setSearchData(e.target.value)
+    }
 
     useEffect(()=>{
         axios.get('https://api.themoviedb.org/3/movie/popular?api_key=97c19644e985a7ef308d0f1544901225&language=en-US')
@@ -22,7 +31,7 @@ const Home = () =>{
     },[])
     return(
         <div>
-            
+            {/* <SearchInput searchData={searchData} searchHandle={searchHandle}/> */}
             <div className="crausel">
             <Carousel
                     showThumbs={false}
@@ -59,9 +68,10 @@ const Home = () =>{
                        }) 
                     }
                 </Carousel>
-                    <MovieList/>
+                    
             </div>
-            
+            <MovieList/>
+           
         </div>
         
     )

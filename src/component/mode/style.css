@@ -1,0 +1,12 @@
+p {
+    display: inline !important;  
+  }
+
+@media only screen and (max-width: 350px) {
+    .mode-text{
+        display: none;
+    }
+  }
+
+
+

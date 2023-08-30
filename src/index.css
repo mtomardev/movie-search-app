@@ -10,6 +10,9 @@
   --headerText: #ececec; 
   --bg: #25003E;
   --Text: hsl(0, 0%, 93%);
+  --Drawermenu : #fefefe;
+  --searchInputBg: #004176;
+  --searchInputText: #fefefe;
 }
 
 .light-theme{
@@ -17,6 +20,8 @@
   --headerText: #ececec; 
   --bg: #fefefe;
   --Text: #818080;
+  --searchInputBg: #2a0231;
+  --searchInputText: #fefefe;
 }
 
 

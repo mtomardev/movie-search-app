@@ -2,6 +2,7 @@ import React from "react";
 import './style.css'
 import { NavLink, Link } from "react-router-dom";
 import Mode from "../mode";
+import TemporaryDrawer from "./drawer";
 
 const Header = () =>{
     return(
@@ -16,6 +17,13 @@ const Header = () =>{
                 <NavLink to="/movies/top_rated">Top Rated</NavLink>
                 <NavLink to="/movies/upcoming">Upcoming</NavLink>
 
+            </div>
+            <div className="mobile-drawer">
+                    <TemporaryDrawer/>
+                {/* <div className="drawer-flex">
+                <Mode/>
+                <TemporaryDrawer/>
+                </div> */}
             </div>
         </div>
     )
